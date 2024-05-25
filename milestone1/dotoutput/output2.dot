@@ -1,0 +1,297 @@
+digraph G {
+	statements13 [label = "statements"]
+	statements13 -> assign12;
+	assign12 [label = "assign"]
+	assign12 -> NAME0;
+	NAME0 [label = "atom (data)"]
+	assign12 -> testlist_comp11;
+	testlist_comp11 [label = "testlist"]
+	testlist_comp11 -> int1;
+	int1 [label = "int (1)"]
+	testlist_comp11 -> int10;
+	int10 [label = "int (10)"]
+	int10 -> int9;
+	int9 [label = "int (9)"]
+	int10 -> int8;
+	int8 [label = "int (8)"]
+	int10 -> int7;
+	int7 [label = "int (7)"]
+	int10 -> int6;
+	int6 [label = "int (6)"]
+	int10 -> int5;
+	int5 [label = "int (5)"]
+	int10 -> int4;
+	int4 [label = "int (4)"]
+	int10 -> int3;
+	int3 [label = "int (3)"]
+	int10 -> int2;
+	int2 [label = "int (2)"]
+	statements13 -> funcdef37;
+	funcdef37 [label = "funcdef(compute_sum_of_even_numbers)"]
+	funcdef37 -> DATA_TYPE14;
+	DATA_TYPE14 [label = "datatype (int)"]
+	funcdef37 -> stmts18;
+	stmts18 [label = "stmts"]
+	stmts18 -> assign17;
+	assign17 [label = "assign"]
+	assign17 -> NAME15;
+	NAME15 [label = "atom (sum_even)"]
+	assign17 -> int16;
+	int16 [label = "int (0)"]
+	stmts18 -> for33;
+	for33 [label = "for"]
+	for33 -> in34;
+	in34 [label = "in"]
+	in34 -> NAME19;
+	NAME19 [label = "atom (num)"]
+	in34 -> NAME20;
+	NAME20 [label = "atom (data)"]
+	for33 -> stmts32;
+	stmts32 [label = "stmts"]
+	stmts32 -> if31;
+	if31 [label = "if"]
+	if31 -> operand25;
+	operand25 [label = "operand(==)"]
+	operand25 -> int26;
+	int26 [label = "int (0)"]
+	operand25 -> term24;
+	term24 [label = "term"]
+	term24 -> NAME21;
+	NAME21 [label = "atom (num)"]
+	term24 -> operand23;
+	operand23 [label = "operant(%)"]
+	operand23 -> int22;
+	int22 [label = "int (2)"]
+	if31 -> stmts30;
+	stmts30 [label = "stmts"]
+	stmts30 -> expr_stmt29;
+	expr_stmt29 [label = "assign_op(+= num
+)"]
+	expr_stmt29 -> NAME27;
+	NAME27 [label = "atom (sum_even)"]
+	expr_stmt29 -> NAME28;
+	NAME28 [label = "atom (num)"]
+	stmts18 -> return36;
+	return36 [label = "return"]
+	return36 -> NAME35;
+	NAME35 [label = "atom (sum_even)"]
+	statements13 -> funcdef61;
+	funcdef61 [label = "funcdef(compute_product_of_odd_numbers)"]
+	funcdef61 -> DATA_TYPE38;
+	DATA_TYPE38 [label = "datatype (int)"]
+	funcdef61 -> stmts42;
+	stmts42 [label = "stmts"]
+	stmts42 -> assign41;
+	assign41 [label = "assign"]
+	assign41 -> NAME39;
+	NAME39 [label = "atom (product_odd)"]
+	assign41 -> int40;
+	int40 [label = "int (1)"]
+	stmts42 -> for57;
+	for57 [label = "for"]
+	for57 -> in58;
+	in58 [label = "in"]
+	in58 -> NAME43;
+	NAME43 [label = "atom (num)"]
+	in58 -> NAME44;
+	NAME44 [label = "atom (data)"]
+	for57 -> stmts56;
+	stmts56 [label = "stmts"]
+	stmts56 -> if55;
+	if55 [label = "if"]
+	if55 -> operand49;
+	operand49 [label = "operand(!=)"]
+	operand49 -> int50;
+	int50 [label = "int (0)"]
+	operand49 -> term48;
+	term48 [label = "term"]
+	term48 -> NAME45;
+	NAME45 [label = "atom (num)"]
+	term48 -> operand47;
+	operand47 [label = "operant(%)"]
+	operand47 -> int46;
+	int46 [label = "int (2)"]
+	if55 -> stmts54;
+	stmts54 [label = "stmts"]
+	stmts54 -> expr_stmt53;
+	expr_stmt53 [label = "assign_op(*= num
+)"]
+	expr_stmt53 -> NAME51;
+	NAME51 [label = "atom (product_odd)"]
+	expr_stmt53 -> NAME52;
+	NAME52 [label = "atom (num)"]
+	stmts42 -> return60;
+	return60 [label = "return"]
+	return60 -> NAME59;
+	NAME59 [label = "atom (product_odd)"]
+	statements13 -> funcdef85;
+	funcdef85 [label = "funcdef(compute_sum_of_odd_numbers)"]
+	funcdef85 -> DATA_TYPE62;
+	DATA_TYPE62 [label = "datatype (int)"]
+	funcdef85 -> stmts66;
+	stmts66 [label = "stmts"]
+	stmts66 -> assign65;
+	assign65 [label = "assign"]
+	assign65 -> NAME63;
+	NAME63 [label = "atom (sum_odd)"]
+	assign65 -> int64;
+	int64 [label = "int (0)"]
+	stmts66 -> for81;
+	for81 [label = "for"]
+	for81 -> in82;
+	in82 [label = "in"]
+	in82 -> NAME67;
+	NAME67 [label = "atom (num)"]
+	in82 -> NAME68;
+	NAME68 [label = "atom (data)"]
+	for81 -> stmts80;
+	stmts80 [label = "stmts"]
+	stmts80 -> if79;
+	if79 [label = "if"]
+	if79 -> operand73;
+	operand73 [label = "operand(!=)"]
+	operand73 -> int74;
+	int74 [label = "int (0)"]
+	operand73 -> term72;
+	term72 [label = "term"]
+	term72 -> NAME69;
+	NAME69 [label = "atom (num)"]
+	term72 -> operand71;
+	operand71 [label = "operant(%)"]
+	operand71 -> int70;
+	int70 [label = "int (2)"]
+	if79 -> stmts78;
+	stmts78 [label = "stmts"]
+	stmts78 -> expr_stmt77;
+	expr_stmt77 [label = "assign_op(+= num
+)"]
+	expr_stmt77 -> NAME75;
+	NAME75 [label = "atom (sum_even)"]
+	expr_stmt77 -> NAME76;
+	NAME76 [label = "atom (num)"]
+	stmts66 -> return84;
+	return84 [label = "return"]
+	return84 -> NAME83;
+	NAME83 [label = "atom (sum_odd)"]
+	statements13 -> funcdef109;
+	funcdef109 [label = "funcdef(compute_product_of_even_numbers)"]
+	funcdef109 -> DATA_TYPE86;
+	DATA_TYPE86 [label = "datatype (int)"]
+	funcdef109 -> stmts90;
+	stmts90 [label = "stmts"]
+	stmts90 -> assign89;
+	assign89 [label = "assign"]
+	assign89 -> NAME87;
+	NAME87 [label = "atom (product_even)"]
+	assign89 -> int88;
+	int88 [label = "int (1)"]
+	stmts90 -> for105;
+	for105 [label = "for"]
+	for105 -> in106;
+	in106 [label = "in"]
+	in106 -> NAME91;
+	NAME91 [label = "atom (num)"]
+	in106 -> NAME92;
+	NAME92 [label = "atom (data)"]
+	for105 -> stmts104;
+	stmts104 [label = "stmts"]
+	stmts104 -> if103;
+	if103 [label = "if"]
+	if103 -> operand97;
+	operand97 [label = "operand(==)"]
+	operand97 -> int98;
+	int98 [label = "int (0)"]
+	operand97 -> term96;
+	term96 [label = "term"]
+	term96 -> NAME93;
+	NAME93 [label = "atom (num)"]
+	term96 -> operand95;
+	operand95 [label = "operant(%)"]
+	operand95 -> int94;
+	int94 [label = "int (2)"]
+	if103 -> stmts102;
+	stmts102 [label = "stmts"]
+	stmts102 -> expr_stmt101;
+	expr_stmt101 [label = "assign_op(*= num
+)"]
+	expr_stmt101 -> NAME99;
+	NAME99 [label = "atom (product_odd)"]
+	expr_stmt101 -> NAME100;
+	NAME100 [label = "atom (num)"]
+	stmts90 -> return108;
+	return108 [label = "return"]
+	return108 -> NAME107;
+	NAME107 [label = "atom (product_even)"]
+	statements13 -> funcdef139;
+	funcdef139 [label = "funcdef(main)"]
+	funcdef139 -> stmts113;
+	stmts113 [label = "stmts"]
+	stmts113 -> assign112;
+	assign112 [label = "assign"]
+	assign112 -> NAME110;
+	NAME110 [label = "atom (sum_even)"]
+	assign112 -> NAME111;
+	NAME111 [label = "atom (compute_sum_of_even_numbers)"]
+	stmts113 -> print115;
+	print115 [label = "print"]
+	print115 -> string114;
+	string114 [label = "string ('Sum of squares of even numbers: ')"]
+	stmts113 -> print117;
+	print117 [label = "print"]
+	print117 -> NAME116;
+	NAME116 [label = "atom (sum_even)"]
+	stmts113 -> assign120;
+	assign120 [label = "assign"]
+	assign120 -> NAME118;
+	NAME118 [label = "atom (product_odd)"]
+	assign120 -> NAME119;
+	NAME119 [label = "atom (compute_product_of_odd_numbers)"]
+	stmts113 -> print122;
+	print122 [label = "print"]
+	print122 -> string121;
+	string121 [label = "string ('Product of squares of odd numbers: ')"]
+	stmts113 -> print124;
+	print124 [label = "print"]
+	print124 -> NAME123;
+	NAME123 [label = "atom (product_odd)"]
+	stmts113 -> assign127;
+	assign127 [label = "assign"]
+	assign127 -> NAME125;
+	NAME125 [label = "atom (sum_odd)"]
+	assign127 -> NAME126;
+	NAME126 [label = "atom (compute_sum_of_odd_numbers)"]
+	stmts113 -> print129;
+	print129 [label = "print"]
+	print129 -> string128;
+	string128 [label = "string ('Sum of squares of odd numbers: ')"]
+	stmts113 -> print131;
+	print131 [label = "print"]
+	print131 -> NAME130;
+	NAME130 [label = "atom (sum_odd)"]
+	stmts113 -> assign134;
+	assign134 [label = "assign"]
+	assign134 -> NAME132;
+	NAME132 [label = "atom (product_even)"]
+	assign134 -> NAME133;
+	NAME133 [label = "atom (compute_product_of_even_numbers)"]
+	stmts113 -> print136;
+	print136 [label = "print"]
+	print136 -> string135;
+	string135 [label = "string ('Product of squares of even numbers: ')"]
+	stmts113 -> print138;
+	print138 [label = "print"]
+	print138 -> NAME137;
+	NAME137 [label = "atom (product_even)"]
+	statements13 -> if145;
+	if145 [label = "if"]
+	if145 -> operand141;
+	operand141 [label = "operand(==)"]
+	operand141 -> string142;
+	string142 [label = "string ('__main__')"]
+	operand141 -> NAME140;
+	NAME140 [label = "atom (__name__)"]
+	if145 -> stmts144;
+	stmts144 [label = "stmts"]
+	stmts144 -> funccall143;
+	funccall143 [label = "funccall(main)"]
+}

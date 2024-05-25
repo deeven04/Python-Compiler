@@ -1,0 +1,203 @@
+digraph G {
+	statements36 [label = "statements"]
+	statements36 -> funcdef35;
+	funcdef35 [label = "funcdef(is_palindrome)"]
+	funcdef35 -> parameter1;
+	parameter1 [label = "parameter"]
+	parameter1 -> tfpdef0;
+	tfpdef0 [label = "tfpdef(s)"]
+	funcdef35 -> stmts5;
+	stmts5 [label = "stmts"]
+	stmts5 -> assign4;
+	assign4 [label = "assign"]
+	assign4 -> NAME2;
+	NAME2 [label = "atom (i)"]
+	assign4 -> int3;
+	int3 [label = "int (0)"]
+	stmts5 -> assign12;
+	assign12 [label = "assign"]
+	assign12 -> NAME6;
+	NAME6 [label = "atom (j)"]
+	assign12 -> arithm_expr11;
+	arithm_expr11 [label = "expr"]
+	arithm_expr11 -> NAME7;
+	NAME7 [label = "atom (len)"]
+	NAME7 -> NAME8;
+	NAME8 [label = "atom (s)"]
+	arithm_expr11 -> operand9;
+	operand9 [label = "operand(-)"]
+	operand9 -> int10;
+	int10 [label = "int (1)"]
+	stmts5 -> while32;
+	while32 [label = "while"]
+	while32 -> operand14;
+	operand14 [label = "operand(<)"]
+	operand14 -> NAME15;
+	NAME15 [label = "atom (j)"]
+	operand14 -> NAME13;
+	NAME13 [label = "atom (i)"]
+	while32 -> stmts31;
+	stmts31 [label = "stmts"]
+	stmts31 -> if30;
+	if30 [label = "if"]
+	if30 -> operand18;
+	operand18 [label = "operand(!=)"]
+	operand18 -> NAME19;
+	NAME19 [label = "atom (s)"]
+	NAME19 -> NAME20;
+	NAME20 [label = "atom (j)"]
+	operand18 -> NAME16;
+	NAME16 [label = "atom (s)"]
+	NAME16 -> NAME17;
+	NAME17 [label = "atom (i)"]
+	if30 -> stmts23;
+	stmts23 [label = "stmts"]
+	stmts23 -> return22;
+	return22 [label = "return"]
+	return22 -> false21;
+	false21 [label = "false"]
+	stmts23 -> expr_stmt26;
+	expr_stmt26 [label = "assign_op(+= 1
+)"]
+	expr_stmt26 -> NAME24;
+	NAME24 [label = "atom (i)"]
+	expr_stmt26 -> int25;
+	int25 [label = "int (1)"]
+	stmts23 -> expr_stmt29;
+	expr_stmt29 [label = "assign_op(-= 1
+)"]
+	expr_stmt29 -> NAME27;
+	NAME27 [label = "atom (j)"]
+	expr_stmt29 -> int28;
+	int28 [label = "int (1)"]
+	stmts5 -> return34;
+	return34 [label = "return"]
+	return34 -> true33;
+	true33 [label = "true"]
+	statements36 -> funcdef58;
+	funcdef58 [label = "funcdef(factorial)"]
+	funcdef58 -> parameter38;
+	parameter38 [label = "parameter"]
+	parameter38 -> tfpdef37;
+	tfpdef37 [label = "tfpdef(n)"]
+	funcdef58 -> stmts57;
+	stmts57 [label = "stmts"]
+	stmts57 -> if56;
+	if56 [label = "if"]
+	if56 -> operand40;
+	operand40 [label = "operand(==)"]
+	operand40 -> int41;
+	int41 [label = "int (0)"]
+	operand40 -> NAME39;
+	NAME39 [label = "atom (n)"]
+	if56 -> stmts44;
+	stmts44 [label = "stmts"]
+	stmts44 -> return43;
+	return43 [label = "return"]
+	return43 -> int42;
+	int42 [label = "int (1)"]
+	if56 -> else55;
+	else55 [label = "else"]
+	else55 -> stmts54;
+	stmts54 [label = "stmts"]
+	stmts54 -> return53;
+	return53 [label = "return"]
+	return53 -> term52;
+	term52 [label = "term"]
+	term52 -> NAME45;
+	NAME45 [label = "atom (n)"]
+	term52 -> operand51;
+	operand51 [label = "operant(*)"]
+	operand51 -> NAME46;
+	NAME46 [label = "atom (factorial)"]
+	NAME46 -> arithm_expr50;
+	arithm_expr50 [label = "expr"]
+	arithm_expr50 -> NAME47;
+	NAME47 [label = "atom (n)"]
+	arithm_expr50 -> operand48;
+	operand48 [label = "operand(-)"]
+	operand48 -> int49;
+	int49 [label = "int (1)"]
+	statements36 -> funcdef93;
+	funcdef93 [label = "funcdef(main)"]
+	funcdef93 -> stmts62;
+	stmts62 [label = "stmts"]
+	stmts62 -> assign61;
+	assign61 [label = "assign"]
+	assign61 -> NAME59;
+	NAME59 [label = "atom (n)"]
+	assign61 -> int60;
+	int60 [label = "int (121)"]
+	stmts62 -> assign66;
+	assign66 [label = "assign"]
+	assign66 -> NAME63;
+	NAME63 [label = "atom (result)"]
+	assign66 -> NAME64;
+	NAME64 [label = "atom (factorial)"]
+	NAME64 -> NAME65;
+	NAME65 [label = "atom (n)"]
+	stmts62 -> print68;
+	print68 [label = "print"]
+	print68 -> string67;
+	string67 [label = "string (f'The factorial of {n} is {result}')"]
+	stmts62 -> assign72;
+	assign72 [label = "assign"]
+	assign72 -> NAME69;
+	NAME69 [label = "atom (factorial_str)"]
+	assign72 -> DATA_TYPE70;
+	DATA_TYPE70 [label = "datatype (str)"]
+	DATA_TYPE70 -> NAME71;
+	NAME71 [label = "atom (result)"]
+	stmts62 -> if82;
+	if82 [label = "if"]
+	if82 -> NAME73;
+	NAME73 [label = "atom (is_palindrome)"]
+	NAME73 -> NAME74;
+	NAME74 [label = "atom (factorial_str)"]
+	if82 -> stmts77;
+	stmts77 [label = "stmts"]
+	stmts77 -> print76;
+	print76 [label = "print"]
+	print76 -> string75;
+	string75 [label = "string (f'The factorial of {n} ({result}) is a palindrome.')"]
+	if82 -> else81;
+	else81 [label = "else"]
+	else81 -> stmts80;
+	stmts80 [label = "stmts"]
+	stmts80 -> print79;
+	print79 [label = "print"]
+	print79 -> string78;
+	string78 [label = "string (f'The factorial of {n} ({result}) is not a palindrome.')"]
+	stmts62 -> assign90;
+	assign90 [label = "assign"]
+	assign90 -> NAME83;
+	NAME83 [label = "atom (factorial_sum)"]
+	assign90 -> NAME84;
+	NAME84 [label = "atom (sum)"]
+	NAME84 -> NAME85;
+	NAME85 [label = "atom (map)"]
+	NAME85 -> arglist89;
+	arglist89 [label = "argument"]
+	arglist89 -> DATA_TYPE86;
+	DATA_TYPE86 [label = "datatype (int)"]
+	arglist89 -> DATA_TYPE87;
+	DATA_TYPE87 [label = "datatype (str)"]
+	DATA_TYPE87 -> NAME88;
+	NAME88 [label = "atom (result)"]
+	stmts62 -> print92;
+	print92 [label = "print"]
+	print92 -> string91;
+	string91 [label = "string (f'The sum of digits in the factorial of {n} is {factorial_sum}')"]
+	statements36 -> if99;
+	if99 [label = "if"]
+	if99 -> operand95;
+	operand95 [label = "operand(==)"]
+	operand95 -> string96;
+	string96 [label = "string ('__main__')"]
+	operand95 -> NAME94;
+	NAME94 [label = "atom (__name__)"]
+	if99 -> stmts98;
+	stmts98 [label = "stmts"]
+	stmts98 -> funccall97;
+	funccall97 [label = "funccall(main)"]
+}

@@ -1,0 +1,623 @@
+digraph G {
+	statements19 [label = "statements"]
+	statements19 -> NAME18;
+	NAME18 [label = "class def(Node)"]
+	NAME18 -> stmts17;
+	stmts17 [label = "stmts"]
+	stmts17 -> funcdef16;
+	funcdef16 [label = "funcdef(__init__)"]
+	funcdef16 -> parameter2;
+	parameter2 [label = "parameter"]
+	parameter2 -> tfpdef0;
+	tfpdef0 [label = "tfpdef(self)"]
+	parameter2 -> tfpdef1;
+	tfpdef1 [label = "tfpdef(data)"]
+	funcdef16 -> stmts4;
+	stmts4 [label = "stmts"]
+	stmts4 -> NAME3;
+	NAME3 [label = "assign_stmt(self)"]
+	stmts4 -> assign7;
+	assign7 [label = "assign"]
+	assign7 -> NAME5;
+	NAME5 [label = "atom (data)"]
+	assign7 -> NAME6;
+	NAME6 [label = "atom (data)"]
+	stmts4 -> NAME8;
+	NAME8 [label = "assign_stmt(self)"]
+	stmts4 -> assign11;
+	assign11 [label = "assign"]
+	assign11 -> NAME9;
+	NAME9 [label = "atom (left)"]
+	assign11 -> None10;
+	None10 [label = "None"]
+	stmts4 -> NAME12;
+	NAME12 [label = "assign_stmt(self)"]
+	stmts4 -> assign15;
+	assign15 [label = "assign"]
+	assign15 -> NAME13;
+	NAME13 [label = "atom (right)"]
+	assign15 -> None14;
+	None14 [label = "None"]
+	statements19 -> funcdef60;
+	funcdef60 [label = "funcdef(insert)"]
+	funcdef60 -> parameter22;
+	parameter22 [label = "parameter"]
+	parameter22 -> tfpdef20;
+	tfpdef20 [label = "tfpdef(root)"]
+	parameter22 -> tfpdef21;
+	tfpdef21 [label = "tfpdef(key)"]
+	funcdef60 -> stmts57;
+	stmts57 [label = "stmts"]
+	stmts57 -> if56;
+	if56 [label = "if"]
+	if56 -> operand24;
+	operand24 [label = "IS"]
+	operand24 -> None25;
+	None25 [label = "None"]
+	operand24 -> NAME23;
+	NAME23 [label = "atom (root)"]
+	if56 -> stmts29;
+	stmts29 [label = "stmts"]
+	stmts29 -> return28;
+	return28 [label = "return"]
+	if56 -> else55;
+	else55 [label = "else"]
+	else55 -> stmts54;
+	stmts54 [label = "stmts"]
+	stmts54 -> if53;
+	if53 [label = "if"]
+	if53 -> operand32;
+	operand32 [label = "operand(<)"]
+	operand32 -> NAME33;
+	NAME33 [label = "atom (key)"]
+	operand32 -> NAME30;
+	NAME30 [label = "atom (root)"]
+	NAME30 -> NAME31;
+	NAME31 [label = "name (data)"]
+	if53 -> stmts35;
+	stmts35 [label = "stmts"]
+	stmts35 -> NAME34;
+	NAME34 [label = "assign_stmt(root)"]
+	stmts35 -> assign42;
+	assign42 [label = "assign"]
+	assign42 -> NAME36;
+	NAME36 [label = "atom (right)"]
+	assign42 -> NAME37;
+	NAME37 [label = "atom (insert)"]
+	NAME37 -> arglist41;
+	arglist41 [label = "argument"]
+	arglist41 -> NAME38;
+	NAME38 [label = "atom (root)"]
+	NAME38 -> NAME39;
+	NAME39 [label = "name (right)"]
+	arglist41 -> NAME40;
+	NAME40 [label = "atom (key)"]
+	if53 -> else52;
+	else52 [label = "else"]
+	else52 -> stmts44;
+	stmts44 [label = "stmts"]
+	stmts44 -> NAME43;
+	NAME43 [label = "assign_stmt(root)"]
+	stmts44 -> assign51;
+	assign51 [label = "assign"]
+	assign51 -> NAME45;
+	NAME45 [label = "atom (left)"]
+	assign51 -> NAME46;
+	NAME46 [label = "atom (insert)"]
+	NAME46 -> arglist50;
+	arglist50 [label = "argument"]
+	arglist50 -> NAME47;
+	NAME47 [label = "atom (root)"]
+	NAME47 -> NAME48;
+	NAME48 [label = "name (left)"]
+	arglist50 -> NAME49;
+	NAME49 [label = "atom (key)"]
+	stmts57 -> return59;
+	return59 [label = "return"]
+	return59 -> NAME58;
+	NAME58 [label = "atom (root)"]
+	statements19 -> funcdef82;
+	funcdef82 [label = "funcdef(inorder)"]
+	funcdef82 -> parameter62;
+	parameter62 [label = "parameter"]
+	parameter62 -> tfpdef61;
+	tfpdef61 [label = "tfpdef(root)"]
+	funcdef82 -> stmts81;
+	stmts81 [label = "stmts"]
+	stmts81 -> if80;
+	if80 [label = "if"]
+	if80 -> NAME63;
+	NAME63 [label = "atom (root)"]
+	if80 -> stmts68;
+	stmts68 [label = "stmts"]
+	stmts68 -> funccall67;
+	funccall67 [label = "funccall(inorder)"]
+	funccall67 -> parameter66;
+	parameter66 [label = "parameter"]
+	parameter66 -> NAME64;
+	NAME64 [label = "atom (root)"]
+	NAME64 -> NAME65;
+	NAME65 [label = "name (left)"]
+	stmts68 -> print75;
+	print75 [label = "print"]
+	print75 -> arglist74;
+	arglist74 [label = "argument"]
+	arglist74 -> NAME69;
+	NAME69 [label = "atom (root)"]
+	NAME69 -> NAME70;
+	NAME70 [label = "name (data)"]
+	arglist74 -> assign73;
+	assign73 [label = "assign(=)"]
+	assign73 -> NAME71;
+	NAME71 [label = "atom (end)"]
+	assign73 -> string72;
+	string72 [label = "string (' ')"]
+	stmts68 -> funccall79;
+	funccall79 [label = "funccall(inorder)"]
+	funccall79 -> parameter78;
+	parameter78 [label = "parameter"]
+	parameter78 -> NAME76;
+	NAME76 [label = "atom (root)"]
+	NAME76 -> NAME77;
+	NAME77 [label = "name (right)"]
+	statements19 -> funcdef99;
+	funcdef99 [label = "funcdef(minValueNode)"]
+	funcdef99 -> parameter84;
+	parameter84 [label = "parameter"]
+	parameter84 -> tfpdef83;
+	tfpdef83 [label = "tfpdef(node)"]
+	funcdef99 -> stmts88;
+	stmts88 [label = "stmts"]
+	stmts88 -> assign87;
+	assign87 [label = "assign"]
+	assign87 -> NAME85;
+	NAME85 [label = "atom (current)"]
+	assign87 -> NAME86;
+	NAME86 [label = "atom (node)"]
+	stmts88 -> while96;
+	while96 [label = "while"]
+	while96 -> NAME89;
+	NAME89 [label = "atom (current)"]
+	NAME89 -> NAME90;
+	NAME90 [label = "name (left)"]
+	while96 -> stmts95;
+	stmts95 [label = "stmts"]
+	stmts95 -> assign94;
+	assign94 [label = "assign"]
+	assign94 -> NAME91;
+	NAME91 [label = "atom (current)"]
+	assign94 -> NAME92;
+	NAME92 [label = "atom (current)"]
+	NAME92 -> NAME93;
+	NAME93 [label = "name (left)"]
+	stmts88 -> return98;
+	return98 [label = "return"]
+	return98 -> NAME97;
+	NAME97 [label = "atom (current)"]
+	statements19 -> funcdef192;
+	funcdef192 [label = "funcdef(deleteNode)"]
+	funcdef192 -> parameter102;
+	parameter102 [label = "parameter"]
+	parameter102 -> tfpdef100;
+	tfpdef100 [label = "tfpdef(root)"]
+	parameter102 -> tfpdef101;
+	tfpdef101 [label = "tfpdef(key)"]
+	funcdef192 -> stmts110;
+	stmts110 [label = "stmts"]
+	stmts110 -> if109;
+	if109 [label = "if"]
+	if109 -> operand104;
+	operand104 [label = "IS"]
+	operand104 -> None105;
+	None105 [label = "None"]
+	operand104 -> NAME103;
+	NAME103 [label = "atom (root)"]
+	if109 -> stmts108;
+	stmts108 [label = "stmts"]
+	stmts108 -> return107;
+	return107 [label = "return"]
+	return107 -> NAME106;
+	NAME106 [label = "atom (root)"]
+	stmts110 -> if188;
+	if188 [label = "if"]
+	if188 -> operand112;
+	operand112 [label = "operand(<)"]
+	operand112 -> NAME113;
+	NAME113 [label = "atom (root)"]
+	NAME113 -> NAME114;
+	NAME114 [label = "name (data)"]
+	operand112 -> NAME111;
+	NAME111 [label = "atom (key)"]
+	if188 -> stmts116;
+	stmts116 [label = "stmts"]
+	stmts116 -> NAME115;
+	NAME115 [label = "assign_stmt(root)"]
+	stmts116 -> assign123;
+	assign123 [label = "assign"]
+	assign123 -> NAME117;
+	NAME117 [label = "atom (left)"]
+	assign123 -> NAME118;
+	NAME118 [label = "atom (deleteNode)"]
+	NAME118 -> arglist122;
+	arglist122 [label = "argument"]
+	arglist122 -> NAME119;
+	NAME119 [label = "atom (root)"]
+	NAME119 -> NAME120;
+	NAME120 [label = "name (left)"]
+	arglist122 -> NAME121;
+	NAME121 [label = "atom (key)"]
+	if188 -> elif137;
+	elif137 [label = "elif"]
+	elif137 -> operand125;
+	operand125 [label = "operand(>)"]
+	operand125 -> NAME126;
+	NAME126 [label = "atom (root)"]
+	NAME126 -> NAME127;
+	NAME127 [label = "name (data)"]
+	operand125 -> NAME124;
+	NAME124 [label = "atom (key)"]
+	elif137 -> stmts129;
+	stmts129 [label = "stmts"]
+	stmts129 -> NAME128;
+	NAME128 [label = "assign_stmt(root)"]
+	stmts129 -> assign136;
+	assign136 [label = "assign"]
+	assign136 -> NAME130;
+	NAME130 [label = "atom (right)"]
+	assign136 -> NAME131;
+	NAME131 [label = "atom (deleteNode)"]
+	NAME131 -> arglist135;
+	arglist135 [label = "argument"]
+	arglist135 -> NAME132;
+	NAME132 [label = "atom (root)"]
+	NAME132 -> NAME133;
+	NAME133 [label = "name (right)"]
+	arglist135 -> NAME134;
+	NAME134 [label = "atom (key)"]
+	if188 -> else189;
+	else189 [label = "else"]
+	else189 -> stmts168;
+	stmts168 [label = "stmts"]
+	stmts168 -> if167;
+	if167 [label = "if"]
+	if167 -> operand140;
+	operand140 [label = "IS"]
+	operand140 -> None141;
+	None141 [label = "None"]
+	operand140 -> NAME138;
+	NAME138 [label = "atom (root)"]
+	NAME138 -> NAME139;
+	NAME139 [label = "name (left)"]
+	if167 -> stmts146;
+	stmts146 [label = "stmts"]
+	stmts146 -> assign145;
+	assign145 [label = "assign"]
+	assign145 -> NAME142;
+	NAME142 [label = "atom (temp)"]
+	assign145 -> NAME143;
+	NAME143 [label = "atom (root)"]
+	NAME143 -> NAME144;
+	NAME144 [label = "name (right)"]
+	stmts146 -> assign149;
+	assign149 [label = "assign"]
+	assign149 -> NAME147;
+	NAME147 [label = "atom (root)"]
+	assign149 -> None148;
+	None148 [label = "None"]
+	stmts146 -> return151;
+	return151 [label = "return"]
+	return151 -> NAME150;
+	NAME150 [label = "atom (temp)"]
+	if167 -> elif166;
+	elif166 [label = "elif"]
+	elif166 -> operand154;
+	operand154 [label = "IS"]
+	operand154 -> None155;
+	None155 [label = "None"]
+	operand154 -> NAME152;
+	NAME152 [label = "atom (root)"]
+	NAME152 -> NAME153;
+	NAME153 [label = "name (right)"]
+	elif166 -> stmts160;
+	stmts160 [label = "stmts"]
+	stmts160 -> assign159;
+	assign159 [label = "assign"]
+	assign159 -> NAME156;
+	NAME156 [label = "atom (temp)"]
+	assign159 -> NAME157;
+	NAME157 [label = "atom (root)"]
+	NAME157 -> NAME158;
+	NAME158 [label = "name (left)"]
+	stmts160 -> assign163;
+	assign163 [label = "assign"]
+	assign163 -> NAME161;
+	NAME161 [label = "atom (root)"]
+	assign163 -> None162;
+	None162 [label = "None"]
+	stmts160 -> return165;
+	return165 [label = "return"]
+	return165 -> NAME164;
+	NAME164 [label = "atom (temp)"]
+	stmts168 -> assign173;
+	assign173 [label = "assign"]
+	assign173 -> NAME169;
+	NAME169 [label = "atom (temp)"]
+	assign173 -> NAME170;
+	NAME170 [label = "atom (minValueNode)"]
+	NAME170 -> NAME171;
+	NAME171 [label = "atom (root)"]
+	NAME171 -> NAME172;
+	NAME172 [label = "name (right)"]
+	stmts168 -> NAME174;
+	NAME174 [label = "assign_stmt(root)"]
+	stmts168 -> assign178;
+	assign178 [label = "assign"]
+	assign178 -> NAME175;
+	NAME175 [label = "atom (data)"]
+	assign178 -> NAME176;
+	NAME176 [label = "atom (temp)"]
+	NAME176 -> NAME177;
+	NAME177 [label = "name (data)"]
+	stmts168 -> NAME179;
+	NAME179 [label = "assign_stmt(root)"]
+	stmts168 -> assign187;
+	assign187 [label = "assign"]
+	assign187 -> NAME180;
+	NAME180 [label = "atom (right)"]
+	assign187 -> NAME181;
+	NAME181 [label = "atom (deleteNode)"]
+	NAME181 -> arglist186;
+	arglist186 [label = "argument"]
+	arglist186 -> NAME182;
+	NAME182 [label = "atom (root)"]
+	NAME182 -> NAME183;
+	NAME183 [label = "name (right)"]
+	arglist186 -> NAME184;
+	NAME184 [label = "atom (temp)"]
+	NAME184 -> NAME185;
+	NAME185 [label = "name (data)"]
+	stmts110 -> return191;
+	return191 [label = "return"]
+	return191 -> NAME190;
+	NAME190 [label = "atom (root)"]
+	statements19 -> funcdef225;
+	funcdef225 [label = "funcdef(search)"]
+	funcdef225 -> parameter195;
+	parameter195 [label = "parameter"]
+	parameter195 -> tfpdef193;
+	tfpdef193 [label = "tfpdef(root)"]
+	parameter195 -> tfpdef194;
+	tfpdef194 [label = "tfpdef(key)"]
+	funcdef225 -> stmts208;
+	stmts208 [label = "stmts"]
+	stmts208 -> if207;
+	if207 [label = "if"]
+	if207 -> or203;
+	or203 [label = "or"]
+	or203 -> operand197;
+	operand197 [label = "IS"]
+	operand197 -> None198;
+	None198 [label = "None"]
+	operand197 -> NAME196;
+	NAME196 [label = "atom (root)"]
+	or203 -> operand201;
+	operand201 [label = "operand(==)"]
+	operand201 -> NAME202;
+	NAME202 [label = "atom (key)"]
+	operand201 -> NAME199;
+	NAME199 [label = "atom (root)"]
+	NAME199 -> NAME200;
+	NAME200 [label = "name (data)"]
+	if207 -> stmts206;
+	stmts206 [label = "stmts"]
+	stmts206 -> return205;
+	return205 [label = "return"]
+	return205 -> NAME204;
+	NAME204 [label = "atom (root)"]
+	stmts208 -> if219;
+	if219 [label = "if"]
+	if219 -> operand211;
+	operand211 [label = "operand(<)"]
+	operand211 -> NAME212;
+	NAME212 [label = "atom (key)"]
+	operand211 -> NAME209;
+	NAME209 [label = "atom (root)"]
+	NAME209 -> NAME210;
+	NAME210 [label = "name (data)"]
+	if219 -> stmts218;
+	stmts218 [label = "stmts"]
+	stmts218 -> return217;
+	return217 [label = "return"]
+	stmts208 -> return224;
+	return224 [label = "return"]
+	statements19 -> assign228;
+	assign228 [label = "assign"]
+	assign228 -> NAME226;
+	NAME226 [label = "atom (root)"]
+	assign228 -> None227;
+	None227 [label = "None"]
+	statements19 -> assign234;
+	assign234 [label = "assign"]
+	assign234 -> NAME229;
+	NAME229 [label = "atom (root)"]
+	assign234 -> NAME230;
+	NAME230 [label = "atom (insert)"]
+	NAME230 -> arglist233;
+	arglist233 [label = "argument"]
+	arglist233 -> NAME231;
+	NAME231 [label = "atom (root)"]
+	arglist233 -> int232;
+	int232 [label = "int (50)"]
+	statements19 -> assign240;
+	assign240 [label = "assign"]
+	assign240 -> NAME235;
+	NAME235 [label = "atom (root)"]
+	assign240 -> NAME236;
+	NAME236 [label = "atom (insert)"]
+	NAME236 -> arglist239;
+	arglist239 [label = "argument"]
+	arglist239 -> NAME237;
+	NAME237 [label = "atom (root)"]
+	arglist239 -> int238;
+	int238 [label = "int (30)"]
+	statements19 -> assign246;
+	assign246 [label = "assign"]
+	assign246 -> NAME241;
+	NAME241 [label = "atom (root)"]
+	assign246 -> NAME242;
+	NAME242 [label = "atom (insert)"]
+	NAME242 -> arglist245;
+	arglist245 [label = "argument"]
+	arglist245 -> NAME243;
+	NAME243 [label = "atom (root)"]
+	arglist245 -> int244;
+	int244 [label = "int (20)"]
+	statements19 -> assign252;
+	assign252 [label = "assign"]
+	assign252 -> NAME247;
+	NAME247 [label = "atom (root)"]
+	assign252 -> NAME248;
+	NAME248 [label = "atom (insert)"]
+	NAME248 -> arglist251;
+	arglist251 [label = "argument"]
+	arglist251 -> NAME249;
+	NAME249 [label = "atom (root)"]
+	arglist251 -> int250;
+	int250 [label = "int (40)"]
+	statements19 -> assign258;
+	assign258 [label = "assign"]
+	assign258 -> NAME253;
+	NAME253 [label = "atom (root)"]
+	assign258 -> NAME254;
+	NAME254 [label = "atom (insert)"]
+	NAME254 -> arglist257;
+	arglist257 [label = "argument"]
+	arglist257 -> NAME255;
+	NAME255 [label = "atom (root)"]
+	arglist257 -> int256;
+	int256 [label = "int (70)"]
+	statements19 -> assign264;
+	assign264 [label = "assign"]
+	assign264 -> NAME259;
+	NAME259 [label = "atom (root)"]
+	assign264 -> NAME260;
+	NAME260 [label = "atom (insert)"]
+	NAME260 -> arglist263;
+	arglist263 [label = "argument"]
+	arglist263 -> NAME261;
+	NAME261 [label = "atom (root)"]
+	arglist263 -> int262;
+	int262 [label = "int (60)"]
+	statements19 -> assign270;
+	assign270 [label = "assign"]
+	assign270 -> NAME265;
+	NAME265 [label = "atom (root)"]
+	assign270 -> NAME266;
+	NAME266 [label = "atom (insert)"]
+	NAME266 -> arglist269;
+	arglist269 [label = "argument"]
+	arglist269 -> NAME267;
+	NAME267 [label = "atom (root)"]
+	arglist269 -> int268;
+	int268 [label = "int (80)"]
+	statements19 -> print272;
+	print272 [label = "print"]
+	print272 -> string271;
+	string271 [label = "string ('Inorder traversal of the given tree:')"]
+	statements19 -> funccall275;
+	funccall275 [label = "funccall(inorder)"]
+	funccall275 -> parameter274;
+	parameter274 [label = "parameter"]
+	parameter274 -> tfpdef273;
+	tfpdef273 [label = "tfpdef(root)"]
+	statements19 -> print277;
+	print277 [label = "print"]
+	print277 -> string276;
+	string276 [label = "string ('nDelete 20')"]
+	statements19 -> assign283;
+	assign283 [label = "assign"]
+	assign283 -> NAME278;
+	NAME278 [label = "atom (root)"]
+	assign283 -> NAME279;
+	NAME279 [label = "atom (deleteNode)"]
+	NAME279 -> arglist282;
+	arglist282 [label = "argument"]
+	arglist282 -> NAME280;
+	NAME280 [label = "atom (root)"]
+	arglist282 -> int281;
+	int281 [label = "int (20)"]
+	statements19 -> print285;
+	print285 [label = "print"]
+	print285 -> string284;
+	string284 [label = "string ('Inorder traversal of the modified tree:')"]
+	statements19 -> funccall288;
+	funccall288 [label = "funccall(inorder)"]
+	funccall288 -> parameter287;
+	parameter287 [label = "parameter"]
+	parameter287 -> tfpdef286;
+	tfpdef286 [label = "tfpdef(root)"]
+	statements19 -> print290;
+	print290 [label = "print"]
+	print290 -> string289;
+	string289 [label = "string ('Delete 30')"]
+	statements19 -> assign296;
+	assign296 [label = "assign"]
+	assign296 -> NAME291;
+	NAME291 [label = "atom (root)"]
+	assign296 -> NAME292;
+	NAME292 [label = "atom (deleteNode)"]
+	NAME292 -> arglist295;
+	arglist295 [label = "argument"]
+	arglist295 -> NAME293;
+	NAME293 [label = "atom (root)"]
+	arglist295 -> int294;
+	int294 [label = "int (30)"]
+	statements19 -> print298;
+	print298 [label = "print"]
+	print298 -> string297;
+	string297 [label = "string ('Inorder traversal of the modified tree:')"]
+	statements19 -> funccall301;
+	funccall301 [label = "funccall(inorder)"]
+	funccall301 -> parameter300;
+	parameter300 [label = "parameter"]
+	parameter300 -> tfpdef299;
+	tfpdef299 [label = "tfpdef(root)"]
+	statements19 -> print303;
+	print303 [label = "print"]
+	print303 -> string302;
+	string302 [label = "string ('Delete 50')"]
+	statements19 -> assign309;
+	assign309 [label = "assign"]
+	assign309 -> NAME304;
+	NAME304 [label = "atom (root)"]
+	assign309 -> NAME305;
+	NAME305 [label = "atom (deleteNode)"]
+	NAME305 -> arglist308;
+	arglist308 [label = "argument"]
+	arglist308 -> NAME306;
+	NAME306 [label = "atom (root)"]
+	arglist308 -> int307;
+	int307 [label = "int (50)"]
+	statements19 -> print311;
+	print311 [label = "print"]
+	print311 -> string310;
+	string310 [label = "string ('Inorder traversal of the modified tree:')"]
+	statements19 -> funccall314;
+	funccall314 [label = "funccall(inorder)"]
+	funccall314 -> parameter313;
+	parameter313 [label = "parameter"]
+	parameter313 -> tfpdef312;
+	tfpdef312 [label = "tfpdef(root)"]
+	statements19 -> if320;
+	if320 [label = "if"]
+	if320 -> operand316;
+	operand316 [label = "operand(==)"]
+	operand316 -> string317;
+	string317 [label = "string ('__main__')"]
+	operand316 -> NAME315;
+	NAME315 [label = "atom (__name__)"]
+	if320 -> stmts319;
+	stmts319 [label = "stmts"]
+	stmts319 -> funccall318;
+	funccall318 [label = "funccall(main)"]
+}
